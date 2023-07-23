@@ -3,7 +3,7 @@ use std::marker::PhantomData;
 use bevy::asset::HandleId;
 use bevy::ecs::query::ROQueryItem;
 use bevy::ecs::system::{SystemParam, SystemParamItem};
-use bevy::prelude::{Commands, Mesh, Rect, Resource, Vec3, With};
+use bevy::prelude::{debug, Commands, Mesh, Rect, Resource, Vec3, With};
 use bevy::render::globals::{GlobalsBuffer, GlobalsUniform};
 use bevy::render::mesh::VertexAttributeValues;
 use bevy::render::render_phase::{
@@ -440,7 +440,7 @@ pub struct QuadBatch {
 
 #[derive(Default, Resource)]
 pub struct ImageBindGroups {
-    values: HashMap<Handle<Image>, BindGroup>,
+    pub values: HashMap<Handle<Image>, BindGroup>,
     font_values: HashMap<Handle<KayakFont>, BindGroup>,
     previous_sizes: HashMap<Handle<Image>, Vec2>,
 }

@@ -19,7 +19,7 @@ mod node;
 mod on_change;
 mod on_event;
 mod on_layout;
-pub(crate) mod render;
+pub mod render;
 mod render_primitive;
 mod styles;
 mod tree;
