@@ -14,7 +14,6 @@ pkgs.mkShell rec{
     udev
     alsaLib
     vulkan-loader
-    xlibsWrapper
     xorg.libXcursor
     xorg.libXrandr
     xorg.libXi # To use x11 feature
